@@ -1,55 +1,61 @@
 # Lab: Password Input
+src/
+├── __tests__/                    # Test files
+│   ├── PasswordInput.test.jsx   # PasswordInput component tests
+│   └── SubmitButton.test.jsx    # SubmitButton component tests
+├── assets/                       # Static assets
+│   └── react.svg
+├── components/                   # React components (isolated)
+│   ├── PasswordInput.jsx        # Password input with change tracking
+│   ├── PasswordInput.css        # PasswordInput styles
+│   ├── SubmitButton.jsx         # Submit button with mouse tracking
+│   └── SubmitButton.css         # SubmitButton styles
+├── App.jsx                       # Main app component (composition)
+├── App.css                       # App-level styles
+├── index.css                     # Global base styles
+├── main.jsx                      # React entry point
+└── ...config files
 
-## Overview
-Now that you've learned how to work with events in React, it's time to build something and put those skills to use! Your goal for this lab is to add events in React to practice building event handling.
 
-You are working with a client to create a new password input within their website. They would like to keep track of when the user is typing as well as when the user hovers over and away from the submit button. This is to help with checking the cadence of their typing and the movement of their mouse for the purpose of adding anti-botting security for their user. Your task is to add these three events and functions related to the events so that the security engineer can easily come in and apply their anti-bot measures easily.
+# screenshot
+![Screenshot](./src/Images/Screenshot.png)
 
-## Task 1: Define the Problem
-- Create a password input that will track the changing of text and the mouse movements.
 
-## Task 2: Determine the Design
-### Determine Component Tree
-```
-└── App
-    ├── PasswordInput
-    └── SubmitButton
-```
-### Isolate/Develop Design per Component
+# 📄 License
+- MIT License - Feel free to use this educational 
 
-## Task 3: Develop the Code
-### Create Components
-#### PasswordInput:
-- Create `PasswordInput` React component
-- Render an `<input>` with a password type
 
-#### SubmitButton:
-- Create a `SubmitButton` React component
-- Render a `<button>` with the text “Submit Password”
+---
 
-### Add Events to Elements
-#### PasswordInput:
-- Add a change event to the `<input>`
+## ▶️ How to Run the Project
 
-#### SubmitButton:
-- Add a mouse enter event to the `<button>`
-- Add a mouse leave event to the `<button>`
+### Step 1: Set Up the Project
+```bash
+# 1. Create project directory
+mkdir react-password-input-lab
+cd react-password-input-lab
 
-### Create Event Handler Functions
-#### PasswordInput:
-- Create a `handleChange` function
-- Add a `console.log` to print out “Entering password…”
+# 2. Initialize npm (if starting fresh)
+npm init -y
 
-#### SubmitButton:
-- Create a `handleEnter` function
-- Add a `console.log` to print out “Mouse Entering”
-- Create a `handleLeave` function
-- Add a `console.log` to print out “Mouse Exiting”
+# 3. Create all the files listed above in their respective paths
+# (Copy/paste each file content into the correct location)
 
-### Call Function in Respective Event
+# 4. Install dependencies
+npm install
 
-## Task 4: Test and Refine
-- Debugging and testing during coding
+# Start Development Server
+npm run dev
+
+# → Opens at http://localhost:5173
+
+Step 3: Verify Functionality
+Open browser DevTools (F12) → Console tab
+Type in password field → See "Entering password…" in console
+Hover over "Submit Password" button → See "Mouse Entering"
+Move mouse away → See "Mouse Exiting"
+
+
 
 ## Task 5: Document and Maintain
 
@@ -58,5 +64,15 @@ You are working with a client to create a new password input within their websit
 - **Event Handling in React:** [React Documentation](https://react.dev/learn/responding-to-events#adding-event-handlers)
 
 
-# screenshot
-![screenshot](./images/Screenshot (4160).png)
+### Test
+NPM TEST
+then output must be-
+ ✓ src/__tests__/SubmitButton.test.jsx (3)
+
+ Test Files  2 passed (2)
+      Tests  6 passed (6)
+   Start at  20:56:13
+   Duration  59.31s (transform 2.05s, setup 35.06s, collect 622ms, tests 154ms, environment 67.39s, prepare 7.39s)
+
+ PASS  Waiting for file changes...
+       press h to show help, press q to quit
