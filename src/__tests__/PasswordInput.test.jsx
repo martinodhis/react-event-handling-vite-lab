@@ -1,3 +1,15 @@
+// src/__tests__/PasswordInput.test.jsx
+/**
+ * Tests for PasswordInput component
+ * 
+ * Tests verify:
+ * - Component renders correctly
+ * - Input has correct type attribute
+ * - onChange event triggers console.log
+ * - Event handler receives correct event object
+ */
+
+
 import "@testing-library/jest-dom";
 import { render, fireEvent } from "@testing-library/react";
 import PasswordInput from "../components/PasswordInput";
