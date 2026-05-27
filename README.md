@@ -18,7 +18,7 @@ src/
 
 
 # screenshot
-![Screenshot](./src/Images/Screenshot.png)
+![Screenshot](./src/Images/Screenshot.PNG)
 
 
 # 📄 License
