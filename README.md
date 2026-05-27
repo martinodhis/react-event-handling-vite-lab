@@ -57,3 +57,6 @@ You are working with a client to create a new password input within their websit
 - **GitHub Repository:** [React Event Handling Vite Lab](https://github.com/learn-co-curriculum/react-event-handling-vite-lab)
 - **Event Handling in React:** [React Documentation](https://react.dev/learn/responding-to-events#adding-event-handlers)
 
+
+# screenshot
+![screenshot](./images/Screenshot (4160).png)
